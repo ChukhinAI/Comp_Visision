@@ -1,12 +1,3 @@
-# ML-keras-hackerearth-WBC-Segmentaion
-Code for WBC Segementation, a hackerearth compeition held by sigtuple
-## Requirements:
- - python 3.5
- - anaconda 4.2.0 
- - tensorflow - conda 
- - keras
- - theano
-
 ## To Run:
  - Put the train data and test data folder in the Data folder
  - First run the data.py file to load the data and preprocess it.
