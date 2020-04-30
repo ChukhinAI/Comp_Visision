@@ -37,6 +37,7 @@ def create_train_data():
         img = cv2.resize(img,(image_rows,image_cols))
         
         img_mask = cv2.imread(os.path.join(train_data_path, image_mask_name), cv2.IMREAD_GRAYSCALE)
+        #print()
         img_mask = cv2.resize(img_mask, (image_rows, image_cols))
         
         img = np.array([img])
@@ -63,7 +64,7 @@ def load_train_data():
 
 def create_test_data():
     #test_data_path = os.path.join(data_path, 'Test_Data') # было
-    test_data_path = os.path.join(data_path, 'Test_Data_v2')  # было
+    test_data_path = os.path.join(data_path, 'Test_Data')  # стало
     images = os.listdir(test_data_path)
     total = len(images)
 
